@@ -3,13 +3,15 @@ A script that automatically sets up development environment for ceph-dashboard u
 
 # How to Use:
 
-Download the Cluster Bot file given to you when your cluster is created.
-
 Make sure you have:
-1. Password of your cluster bot (found on slack)
-2. Server for your cluster bot (found within the downloadable file from slack)
-3. Path to where you downloaded the cluster bot file
+1. Username of your cluster bot (always kubeadmin), also found on slack
+2. Password of your cluster bot (found on slack next to username)
+3. Server for your cluster bot (found within the file from slack)
+
+Once the script is run, you will be asked to provide your username (kubeadmin), your password (provided by cluster-bot on slack) and your server (within the file cluster-bot gives you). Input these values.
 
 After running the script, a password should be printed at the bottom of your terminal. That is your ceph-dashboard password.
-Likewise, a URL for a AWS server should be printed. Copy and paste into your web browser, and you should be able to login
-to ceph-dashboard. Username: admin
+Likewise, a URL for a AWS server should be printed (it will be labeled "External IP"). Copy and paste into your web browser along with the port next to it (4 digits), and you should be able to login to ceph-dashboard (add a colon between the IP and the port). 
+
+Username for ceph dashboard is admin.
+Password is the password printed when the script is done.
