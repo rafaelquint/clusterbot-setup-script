@@ -3,7 +3,7 @@ A script that automatically sets up development environment for ceph-dashboard u
 
 # How to Use:
 
-###Make sure you have:
+### Make sure you have:
 1. Username of your cluster bot **(Highlighted in Blue below)**
 2. Password of your cluster bot **(Highlighted in Blue below)**
 
