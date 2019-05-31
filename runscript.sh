@@ -19,7 +19,7 @@ Logging into cluster. Please get password from cluster bot in Slack
 *******************************************************\n\n"
 
 read -p 'Enter the server name from the cluster bot file: ' servername
-oc login -u kubeadmin servername
+oc login $servername
 
 printf "\n*******************************************************
 Attempting to clone github.com/rhcs-dashboard/ceph-dev.gitcd
@@ -79,12 +79,12 @@ Attempting to expose dashboard
 printf "\n*******************************************************
 Attempting to find External-IPs and Ports
 *******************************************************\n\n"
-sleep 30
+sleep 25
 oc get svc
 
 printf "\n*******************************************************
 Attempting to find dashboard password
 *******************************************************\n\n"
-
+sleep 30
 printf "Dashboard Password: "
 echo $(kubectl get secret rook-ceph-dashboard-password -o yaml | grep "password:" | awk '{print $2}' | base64 --decode)
