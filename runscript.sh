@@ -29,12 +29,6 @@ git clone https://github.com/rhcs-dashboard/ceph-dev
 cd ceph-dev
 
 printf "\n*******************************************************
-Attempting to clone rook into ceph-dev
-*******************************************************\n\n"
-
-#git clone https://github.com/rook/rook.git
-
-printf "\n*******************************************************
 Attempting to create ceph common
 *******************************************************\n\n"
 
@@ -71,14 +65,9 @@ Attempting to create ceph external dashboard
 oc create -f deployment/rook/dashboard-external-https-openshift.yaml
 
 printf "\n*******************************************************
-Attempting to expose dashboard
-*******************************************************\n\n"
-
-#oc expose service rook-ceph-mgr-dashboard
-
-printf "\n*******************************************************
 Attempting to find External-IPs and Ports
 *******************************************************\n\n"
+
 sleep 25
 oc get svc
 
@@ -88,3 +77,4 @@ Attempting to find dashboard password
 sleep 30
 printf "Dashboard Password: "
 echo $(kubectl get secret rook-ceph-dashboard-password -o yaml | grep "password:" | awk '{print $2}' | base64 --decode)
+
