@@ -13,5 +13,7 @@ Once the script is run, you will be asked to provide your username (kubeadmin), 
 After running the script, a password should be printed at the bottom of your terminal. That is your ceph-dashboard password.
 Likewise, a URL for a AWS server should be printed (it will be labeled "External IP"). Copy and paste into your web browser along with the port next to it (4 digits), and you should be able to login to ceph-dashboard (add a colon between the IP and the port). 
 
+![screenshot-of-aws](https://user-images.githubusercontent.com/36835422/58724582-04854580-83ab-11e9-99b4-bf95aec53db9.png)
+
 Username for ceph dashboard is admin.
 Password is the password printed when the script is done.
