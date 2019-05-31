@@ -18,8 +18,9 @@ Make sure you have:
 Once the script is run, you will be asked to provide your username **(Number 1 above)**, your password **(Number 2 above)** and your server **(Number 3 above)**. Input these values when prompted.
 
 
-fter running the script, a password should be printed at the bottom of your terminal. That is your ceph-dashboard password.
-Likewise, a URL for a AWS server should be printed (it will be labeled "External IP"). Copy and paste into your web browser along with the port next to it (4 digits), and you should be able to login to ceph-dashboard (add a colon between the IP and the port). **Below is a picture of the link and port (highlighted) as well as the password (at the bottom**
+After running the script, a password should be printed at the bottom of your terminal **(Bottom of screenshot below)**. That is your ceph-dashboard password.
+
+Likewise, a URL for a AWS server should be printed (it will be labeled "External IP"). Copy and paste into your web browser along with the port next to it (4 digits), and you should be able to login to ceph-dashboard (add a colon between the IP and the port in your browser). **Below is a picture of the link and port (highlighted) as well as the password (at the bottom)**
 
 ![screenshot-of-aws](https://user-images.githubusercontent.com/36835422/58724582-04854580-83ab-11e9-99b4-bf95aec53db9.png)
 
