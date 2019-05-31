@@ -1,7 +1,7 @@
 # clusterbot-setup-script
 A script that automatically sets up development environment for ceph-dashboard use
 
-== How to Use:
+# How to Use:
 
 Download the Cluster Bot file given to you when your cluster is created.
 
