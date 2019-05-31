@@ -9,8 +9,8 @@ printf "\n*******************************************************
 Setting KUBECONFIG environemt variable to cluster bot file
 *******************************************************\n\n"
 
-#echo export KUBECONFIG=home/rquinter/Downloads/cluster-bot-2019-05-31-113811.kubeconfig
-echo export KUBECONFIG=clusterbotfile
+#echo export KUBECONFIG=home/rquinter/Downloads/cluster-bot-2019-05-31-141019.kubeconfig
+#echo export KUBECONFIG=clusterbotfile
 
 #cd openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit/
 
@@ -18,7 +18,7 @@ printf "\n*******************************************************
 Logging into cluster. Please get password from cluster bot in Slack
 *******************************************************\n\n"
 
-oc login -u kubeadmin
+oc login -u kubeadmin https://api.ci-ln-95my7qk-d5d6b.origin-ci-int-aws.dev.rhcloud.com:6443
 
 printf "\n*******************************************************
 Attempting to clone github.com/rhcs-dashboard/ceph-dev.gitcd
@@ -78,7 +78,7 @@ Attempting to expose dashboard
 printf "\n*******************************************************
 Attempting to find External-IPs and Ports
 *******************************************************\n\n"
-
+sleep 30
 oc get svc
 
 printf "\n*******************************************************
@@ -87,3 +87,4 @@ Attempting to find dashboard password
 
 printf "Dashboard Password: "
 echo $(kubectl get secret rook-ceph-dashboard-password -o yaml | grep "password:" | awk '{print $2}' | base64 --decode)
+
