@@ -3,7 +3,7 @@ printf "\n*******************************************************
 Ask user for path to their cluster bot file
 *******************************************************\n\n"
 
-read -p 'Enter the path to your cluster bot file: ' clusterbotfile
+#read -p 'Enter the path to your cluster bot file: ' clusterbotfile
 
 printf "\n*******************************************************
 Setting KUBECONFIG environemt variable to cluster bot file
@@ -18,7 +18,8 @@ printf "\n*******************************************************
 Logging into cluster. Please get password from cluster bot in Slack
 *******************************************************\n\n"
 
-oc login -u kubeadmin https://api.ci-ln-95my7qk-d5d6b.origin-ci-int-aws.dev.rhcloud.com:6443
+read -p 'Enter the server name from the cluster bot file: ' servername
+oc login -u kubeadmin servername
 
 printf "\n*******************************************************
 Attempting to clone github.com/rhcs-dashboard/ceph-dev.gitcd
@@ -87,4 +88,3 @@ Attempting to find dashboard password
 
 printf "Dashboard Password: "
 echo $(kubectl get secret rook-ceph-dashboard-password -o yaml | grep "password:" | awk '{print $2}' | base64 --decode)
-
