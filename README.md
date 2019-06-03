@@ -20,8 +20,8 @@ Proceed to cd into the downloaded file, then copy the executable "oc" and the ex
 
 ```
 cd openshift-origin-client-tools-v3.11.0-0cvc58b-linux-64bit
-sudo cp -r /openshift-origin-client-tools-v3.11.0-0cvc58b-linux-64bit oc /usr/bin
-sudo cp -r /openshift-origin-client-tools-v3.11.0-0cvc58b-linux-64bit kubectl /usr/bin
+sudo cp oc /usr/bin
+sudo cp kubectl /usr/bin
 ```
 
 # How to Use:
@@ -37,6 +37,8 @@ sudo cp -r /openshift-origin-client-tools-v3.11.0-0cvc58b-linux-64bit kubectl /u
 
 ![server](https://user-images.githubusercontent.com/36835422/58724857-a7d65a80-83ab-11e9-8cc7-dccd36b74d6f.png)
 
+
+To run the script, download the file botscript.sh and 
 
 Once the script is run, you will be asked to provide your username **(Number 1 above)**, your password **(Number 2 above)** and your server **(Number 3 above)**. Input these values when prompted.
 
