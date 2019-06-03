@@ -3,7 +3,7 @@ A script that automatically sets up development environment for ceph-dashboard u
 
 # Setup:
 
-Make sure that you have downloaded the Openshift Client and that the executable "oc" is in your "bin" directory. The download can be found here: https://github.com/openshift/origin/releases/tag/v3.11.0
+Make sure that you have downloaded the Openshift Client and that the executable "oc" and "kubectl" are in your "bin" directory. There are instructions for setting up the Openshift Client below. The download can be found here: https://github.com/openshift/origin/releases/tag/v3.11.0
 
 Then install the proper file for your operationg system (for Fedora, we will be using the **file highlighted in blue below** )
 
@@ -16,12 +16,13 @@ sudo curl -LS -o h.tar.gz https://github.com/openshift/origin/releases/download/
 sudo tar -xzvf h.tar.gz -C ./
 ```
 
-Proceed to cd into the downloaded file, then copy the executable "oc" into your "bin" directory
+Proceed to cd into the downloaded file, then copy the executable "oc" and the executable "kubectl" into your "bin" directory 
+
 ```
 cd openshift-origin-client-tools-v3.11.0-0cvc58b-linux-64bit
-cp oc \user\bin\
+sudo cp -r /openshift-origin-client-tools-v3.11.0-0cvc58b-linux-64bit oc /usr/bin
+sudo cp -r /openshift-origin-client-tools-v3.11.0-0cvc58b-linux-64bit kubectl /usr/bin
 ```
-
 
 # How to Use:
 
