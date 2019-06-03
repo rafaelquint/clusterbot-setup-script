@@ -62,7 +62,7 @@ printf "\n*******************************************************
 Attempting to create ceph external dashboard
 *******************************************************\n\n"
 
-oc create -f deployment/rook/dashboard-external-https-openshift.yaml
+oc create -f deployment/rook/dashboard-external-https.yaml
 
 printf "\n*******************************************************
 Attempting to find External-IPs and Ports (this should take 25 secounds)
