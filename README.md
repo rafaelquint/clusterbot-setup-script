@@ -17,9 +17,11 @@ sudo tar -xzvf h.tar.gz -C ./
 ```
 
 Proceed to cd into the downloaded file, then copy the executable "oc" into your "bin" directory
+```
+cd openshift-origin-client-tools-v3.11.0-0cvc58b-linux-64bit
+cp oc \user\bin\
+```
 
-`cd openshift-origin-client-tools-v3.11.0-0cvc58b-linux-64bit`
-`cp oc \home\bin`
 
 # How to Use:
 
