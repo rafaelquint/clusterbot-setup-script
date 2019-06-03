@@ -65,14 +65,14 @@ Attempting to create ceph external dashboard
 oc create -f deployment/rook/dashboard-external-https-openshift.yaml
 
 printf "\n*******************************************************
-Attempting to find External-IPs and Ports
+Attempting to find External-IPs and Ports (this should take 25 secounds)
 *******************************************************\n\n"
 
 sleep 25
 oc get svc
 
 printf "\n*******************************************************
-Attempting to find dashboard password
+Attempting to find dashboard password (this should take 30 secounds)
 *******************************************************\n\n"
 sleep 30
 printf "Dashboard Password: "
