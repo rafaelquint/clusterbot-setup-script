@@ -38,7 +38,11 @@ sudo cp kubectl /usr/bin
 ![server](https://user-images.githubusercontent.com/36835422/58724857-a7d65a80-83ab-11e9-8cc7-dccd36b74d6f.png)
 
 
-To run the script, download the file botscript.sh and 
+To run the script, download the file botscript.sh and run it:
+
+```
+sudo ./botscript.sh
+```
 
 Once the script is run, you will be asked to provide your username **(Number 1 above)**, your password **(Number 2 above)** and your server **(Number 3 above)**. Input these values when prompted.
 
