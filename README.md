@@ -9,6 +9,16 @@ Then install the proper file for your operationg system (for Fedora, we will be 
 
 ![oc](https://user-images.githubusercontent.com/36835422/58800817-e2700b00-85d6-11e9-9557-42115e9a38df.png)
 
+Alternatively, you could run the following two commands, and the file will automatically be downloaded into your current directory:
+
+`sudo curl -LS -o h.tar.gz https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz`
+`sudo tar -xzvf h.tar.gz -C ./`
+
+Proceed to cd into the downloaded file, then copy the executable "oc" into your "bin" directory
+
+`cd openshift-origin-client-tools-v3.11.0-0cvc58b-linux-64bit`
+`cp oc \home\bin`
+
 # How to Use:
 
 ### Make sure you have:
