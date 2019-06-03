@@ -5,7 +5,9 @@ A script that automatically sets up development environment for ceph-dashboard u
 
 Make sure that you have downloaded the Openshift Client and that the executable "oc" is in your "bin" directory. The download can be found here: https://github.com/openshift/origin/releases/tag/v3.11.0
 
-Then install the proper file for your operationg system (for Fedora, we will be using the **file highlighted in blue**)
+Then install the proper file for your operationg system (for Fedora, we will be using the **file highlighted in blue below** )
+
+![oc](https://user-images.githubusercontent.com/36835422/58800817-e2700b00-85d6-11e9-9557-42115e9a38df.png)
 
 # How to Use:
 
