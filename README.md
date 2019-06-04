@@ -26,6 +26,8 @@ Once the script is run, you will be asked to provide your username **(Number 1 a
 
 At the bottom of your screen when the script is done, there should be a login provided as well as an AWS link. Copy the link and then use the login provided. A screenshot of the link and login info is shown below:
 
+**If an error comes up saying that the password "Timed Out", then run the script one more time.**
+
 ![awslog](https://user-images.githubusercontent.com/36835422/58890389-87164980-86b8-11e9-88da-396ffc228995.png)
 
 **Username for ceph dashboard is admin.
