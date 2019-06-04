@@ -24,12 +24,7 @@ sudo ./botscript.sh
 
 Once the script is run, you will be asked to provide your username **(Number 1 above)** and your password **(Number 2 above)**. Input these values when prompted.
 
-
-After running the script, a password should be printed at the bottom of your terminal **(Bottom of screenshot below)**. That is your ceph-dashboard password.
-
-Likewise, a URL for a AWS server should be printed (it will be labeled "External IP"). Copy and paste into your web browser along with the port next to it (4 digits), and you should be able to login to ceph-dashboard (add a colon between the IP and the port in your browser). **Below is a picture of the link and port (highlighted) as well as the password (at the bottom)**
-
-![screenshot-of-aws](https://user-images.githubusercontent.com/36835422/58724582-04854580-83ab-11e9-99b4-bf95aec53db9.png)
+At the bottom of your screen when the script is done, there should be a login provided as well as an AWS link. Copy the link and then use the login provided.
 
 **Username for ceph dashboard is admin.
 Password is the password printed when the script is done.**
