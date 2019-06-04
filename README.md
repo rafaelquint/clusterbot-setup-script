@@ -3,26 +3,9 @@ A script that automatically sets up development environment for ceph-dashboard u
 
 # Setup:
 
-Make sure that you have downloaded the Openshift Client and that the executable "oc" and "kubectl" are in your "bin" directory. There are instructions for setting up the Openshift Client below. The download can be found here: https://github.com/openshift/origin/releases/tag/v3.11.0
+Make sure you have **downloaded the kubeconfig file from cluster-bot on Slack to your Downloads folder**. This can be done by simply clicking the Download button (looks like a little cloud) shown below:
 
-Then install the proper file for your operationg system (for Fedora, we will be using the **file highlighted in blue below** )
-
-![oc](https://user-images.githubusercontent.com/36835422/58800817-e2700b00-85d6-11e9-9557-42115e9a38df.png)
-
-Alternatively, you could run the following two commands, and the file will automatically be downloaded into your current directory:
-
-```
-sudo curl -LS -o h.tar.gz https://github.com/openshift/origin/releases/download/v3.11.0/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz
-sudo tar -xzvf h.tar.gz -C ./
-```
-
-Proceed to cd into the downloaded file, then copy the executable "oc" and the executable "kubectl" into your "bin" directory 
-
-```
-cd openshift-origin-client-tools-v3.11.0-0cvc58b-linux-64bit
-sudo cp oc /usr/bin
-sudo cp kubectl /usr/bin
-```
+![dwn](https://user-images.githubusercontent.com/36835422/58883319-284ad300-86ac-11e9-8dff-a791d37dcf2b.png)
 
 # How to Use:
 
@@ -32,11 +15,6 @@ sudo cp kubectl /usr/bin
 
 ![clusterbot-user-and-pass](https://user-images.githubusercontent.com/36835422/58724848-a2791000-83ab-11e9-9e3f-4a5f00348431.png)
 
-3. Server for your cluster bot **(Highlighted in Blue below)**
-
-
-![server](https://user-images.githubusercontent.com/36835422/58724857-a7d65a80-83ab-11e9-8cc7-dccd36b74d6f.png)
-
 
 To run the script, download the file botscript.sh and run it:
 
@@ -44,7 +22,7 @@ To run the script, download the file botscript.sh and run it:
 sudo ./botscript.sh
 ```
 
-Once the script is run, you will be asked to provide your username **(Number 1 above)**, your password **(Number 2 above)** and your server **(Number 3 above)**. Input these values when prompted.
+Once the script is run, you will be asked to provide your username **(Number 1 above)** and your password **(Number 2 above)**. Input these values when prompted.
 
 
 After running the script, a password should be printed at the bottom of your terminal **(Bottom of screenshot below)**. That is your ceph-dashboard password.
