@@ -127,6 +127,7 @@ if [ $i -lt 180 ]; then
   port=$(oc get svc | grep ' *-*.us-east-1.elb.amazonaws.com' | tr -s [:blank:] | cut -d " " -f 5 |  cut -d ":" -f 1 | head -1)
   printf "\n"
   echo "Dashboard link: https://$ips:$port"
+  echo "NOTE: This link may not be responsive immediately. You may have to wait a few minutes for it to work."
 fi
 
 printf "\n*******************************************************
