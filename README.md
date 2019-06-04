@@ -7,6 +7,12 @@ Make sure you have **downloaded the kubeconfig file from cluster-bot on Slack to
 
 ![dwn](https://user-images.githubusercontent.com/36835422/58883319-284ad300-86ac-11e9-8dff-a791d37dcf2b.png)
 
+**You must chmod the script so it is executable:**
+
+```
+sudo chmod u+x botscript.sh
+```
+
 # How to Use:
 
 ### Make sure you have:
@@ -32,5 +38,12 @@ At the bottom of your screen when the script is done, there should be a login pr
 
 **Username for ceph dashboard is admin.
 Password is the password printed when the script is done.**
+
+### Notable Issues:
+
+If an error comes up saying that the password "Timed Out", then run the script one more time.
+
+
+
 
 
