@@ -96,7 +96,7 @@ Attempting to create ceph external dashboard
 oc create -f deployment/rook/dashboard-external-https-openshift.yaml
 
 printf "\n*******************************************************
-Waiting for Dashboard External-IP and Port to be revealed
+Waiting for Dashboard External-IP and Port to be revealed (Might take awhile)
 *******************************************************\n\n"
 
 #sleep 25
@@ -131,7 +131,7 @@ if [ $i -lt 180 ]; then
 fi
 
 printf "\n*******************************************************
-Waiting for dashboard password to be revealed
+Waiting for dashboard password to be revealed (Might take awhile)
 *******************************************************\n\n"
 #sleep 30
 
