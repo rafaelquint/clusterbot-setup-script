@@ -1,5 +1,8 @@
 #!/bin/bash
 
+tempdir=$(mktemp -d)
+cd $tempdir
+
 printf "\n*******************************************************
 Checking for existence of oc and kubectl
 *******************************************************\n\n"
