@@ -39,9 +39,13 @@ At the bottom of your screen when the script is done, there should be a login pr
 **Username for ceph dashboard is admin.
 Password is the password printed when the script is done.**
 
-### Notable Issues:
+# Notable Issues:
 
-If an error comes up saying that the password "Timed Out", then run the script one more time.
+* If an error comes up saying that the password "Timed Out", then run the script one more time.
+* If the link doesn't work, wait a minute and try again. There is a delay in setting up the dashboard link.
+* If the script isn't executable, run `sudo chmod u+x botscript.sh`
+* If the password doesn't show up quickly, wait a moment since it takes aboout 3 minutes to display a password
+
 
 
 
