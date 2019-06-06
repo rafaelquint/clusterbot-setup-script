@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 tempdir=$(mktemp -d)
 cd $tempdir
@@ -7,7 +8,7 @@ printf "\n*******************************************************
 Checking for existence of oc and kubectl
 *******************************************************\n\n"
 
-if [ -e /usr/bin/oc  ] && [ -e /usr/bin/kubectl ]
+if [ -x "$(command -v oc)" ] && [ -x "$(command -v kubectl)" ]
 then
    printf "oc and kubectl are installed in the bin\n"
 else
@@ -41,7 +42,7 @@ printf "\n*******************************************************
 Attempting to clone github.com/rhcs-dashboard/ceph-dev.gitcd (if necessary)
 *******************************************************\n\n"
 
-git clone https://github.com/rhcs-dashboard/ceph-dev.git
+git clone --depth 1 git@github.com:rhcs-dashboard/ceph-dev.git
 cd ceph-dev
 
 printf "\n*******************************************************
@@ -87,7 +88,7 @@ Waiting for Dashboard External-IP and Port to be revealed (Might take some time)
 svcoutput=$(oc get svc)
 i=0
 
-until grep -q ' *-*.us-east-1.elb.amazonaws.com' <<< $svcoutput; do
+until grep -q ' *-*.*-*-*.*.amazonaws.com' <<< $svcoutput; do
   if [ $i -gt 180 ] ; then
     printf "\n"
     echo "ERROR: Timed out waiting for dashboard ip to be exposed. Running this script again may fix it."
@@ -101,8 +102,8 @@ done
 
 if [ $i -lt 180 ]; then
   printf "\n"
-  ips=$(oc get svc | grep ' *-*.us-east-1.elb.amazonaws.com' | tr -s [:blank:] | cut -d " " -f 4 | head -1)
-  port=$(oc get svc | grep ' *-*.us-east-1.elb.amazonaws.com' | tr -s [:blank:] | cut -d " " -f 5 |  cut -d ":" -f 1 | head -1)
+  ips=$(oc get svc | grep ' *-*.*-*-*.*.amazonaws.com' | tr -s [:blank:] | cut -d " " -f 4 | head -1)
+  port=$(oc get svc | grep ' *-*.*-*-*.*.amazonaws.com' | tr -s [:blank:] | cut -d " " -f 5 |  cut -d ":" -f 1 | head -1)
   printf "\n"
   echo "Dashboard link: https://$ips:$port"
   printf "\n\nNOTE: This link may not be responsive immediately. I recommend waiting at least until the password is revealed.\n"
