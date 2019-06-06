@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 tempdir=$(mktemp -d)
 cd $tempdir
