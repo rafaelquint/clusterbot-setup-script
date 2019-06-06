@@ -42,7 +42,7 @@ printf "\n*******************************************************
 Attempting to clone github.com/rhcs-dashboard/ceph-dev.gitcd (if necessary)
 *******************************************************\n\n"
 
-git clone --depth 1 git@github.com:rhcs-dashboard/ceph-dev.git
+git clone --depth 1 https://github.com/rhcs-dashboard/ceph-dev.git
 cd ceph-dev
 
 printf "\n*******************************************************
