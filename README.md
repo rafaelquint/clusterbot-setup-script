@@ -30,7 +30,7 @@ sudo ./botscript.sh
 
 Once the script is run, you will be asked to provide your username **(Number 1 above)** and your password **(Number 2 above)**. Input these values when prompted.
 
-At the bottom of your screen when the script is done, there should be a login provided as well as an AWS link. Copy the link and then use the login provided. A screenshot of the link and login info is shown below:
+At the bottom of your screen when the script is done, there should be a login provided as well as an AWS link. Copy the link and then use the login provided. Be aware that it takes awhile for the link to work. Likewise, be aware that the password will take acouple minutes to appear on your terminal. A screenshot of the link and login info is shown below:
 
 **If an error comes up saying that the password "Timed Out", then run the script one more time.**
 
