@@ -105,8 +105,9 @@ if [ $i -lt 180 ]; then
   port=$(oc get svc | grep ' *-*.*-*-*.*.amazonaws.com' | tr -s [:blank:] | cut -d " " -f 5 |  cut -d ":" -f 1 | head -1)
   printf "\n"
   echo "Dashboard link: https://$ips:$port"
-  printf "\n\nNOTE: This link may not be responsive immediately. I recommend waiting at least until the password is revealed.\n"
+  printf "\n\nNOTE: This link may not be responsive immediately. I recommend waiting at least until a minute after the password is revealed.\n"
   printf "If it isn't working simply continue to refresh the page. It usually works after 2 to 5 minutes."
+  printf "\n"
 fi
 
 printf "\n*******************************************************
